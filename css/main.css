@@ -1,0 +1,378 @@
+/* 반응형 레이아웃 구현 : https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Responsive_Design */
+/* flex 사용 이유에 대해 명확히 정의할 줄 알아야함 */
+
+
+.main-container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* main 고양이 큰 사진 section */
+
+.main-container .main-section-cat {
+
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.main-container .main-section-cat .main-cat-img {
+
+    width: 50%;
+    margin-right: 110px;
+
+}
+
+/* 이거 맞나? 상속이*/
+.main-container .main-section-cat .loremIpsum-bold {
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 30px; /* 아닌거 같은데? 고정 값으로 하는거 맞음?*/
+
+}
+
+.main-container .main-section-cat .loremIpsum-normal {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+/* main text section */
+
+.main-container .main-section-text {
+
+    margin-bottom: 88px;
+
+}
+
+/* 이거 이렇게 하는게 아니라 h2 같은데? */
+.main-container .main-section-text .loremIpsum-bold {
+
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    color: #D97652;
+    text-align: center;
+
+}
+
+.main-container .main-section-text .loremIpsum-normal {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+.main-container .main-section-text span {
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #D97652;
+
+}
+
+/* 고양이 이미지 리스트 section */
+
+.main-container .image-list-container {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.main-container .image-item,
+.main-container .add-image-item
+{
+    width: calc(33% - 20px); /* 3열로 나누기, 간격은 여기서 20px로 설정 */
+    height: 300px; /* 높이가 변해서 고정값 사용 */
+    margin: 10px;
+}
+
+/* 여긴 좀 있다가 바꾸자 */
+.main-container .image-item img,
+.main-container .add-image-item img {
+    width: 100%; /* 이미지를 부모 요소에 꽉 채우기 */
+    height: 100%; /* 비율을 유지한 채 이미지의 높이 조절 */
+    border-radius: 30px;
+}
+
+
+.main-container .show-more {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.main-container .show-more p {
+
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 28px;
+
+}
+
+.main-container .show-more-button {
+
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: #D97652;
+
+}
+
+/* 중간 회색 가로선 */
+.main-container .horizontal-gray-line {
+    height: 1px; /* 수평선의 높이를 1px로 설정 */
+    background-color: #C4C4C4; /* 회색으로 선을 설정 */
+    margin-top: 80px;
+    margin-bottom: 68px;
+}
+
+.main-container .map {
+
+    /*width: 896px;*/
+
+}
+
+/* map container */
+.main-container .map-section h2 {
+
+    text-align: left;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+
+}
+
+.main-container .map-section p {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 48px;
+    text-align: left;
+
+}
+
+.main-container .map-section .map {
+
+    height: 400px;
+
+}
+
+
+.main-container .subscribe {
+
+    position: relative; /* 위치 조정을 위한 position */
+    width: 1080px;
+    top: 80px; /* 이거 값 기준을 뭘로 해야하지? */
+
+}
+
+.main-container .subscribe-inner-container {
+
+    position: absolute; /* 부모를 기준으로 절대 위치 설정 */
+    display: flex;
+    border-radius: 30px;
+    background-color: #263140;
+}
+
+
+.main-container .subscribe-text-container {
+    flex: 1; /* 각 자식 요소에 동일한 flex 값 적용 */
+    margin: 50px;
+}
+
+.main-container .subscribe-text-container .loremIpsum-bold {
+
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: white;
+
+}
+
+.main-container .subscribe-text-container .loremIpsum-normal {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+
+}
+
+.main-container .subscribe-input-container {
+
+    position: relative; /* 버튼 제어용 position */
+    flex: 1;               /* 각 자식 요소에 동일한 flex 값 적용 */
+    display: flex;         /* 자식 요소 내에서 중앙 정렬 */
+    align-items: center;
+    margin: 50px;
+
+}
+
+
+.main-container .subscribe-input-container img {
+
+    position: absolute;
+    left: 28px; /* 맞는 건지 모르겠다 */
+
+}
+
+.main-container .subscribe-input-container input {
+
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    padding-left: 68px; /* 맞는 건지 모르겠다 */
+    margin: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+
+}
+
+.main-container .subscribe-input-container button {
+
+    /* 고정값 사용이 있어도 되는지 모르겠다 */
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    right: 10px;
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: #D97652;
+
+}
+
+/* 아래에 큰 고양이 */
+
+.bottom-cat-container {
+
+    /* hover 버튼 배치를 위한 flex 속성 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 180px;
+}
+
+.bottom-cat {
+
+    width: 100%; /* 화면에 딱 맞추기 위한 속성 */
+    height: 200px;
+
+}
+
+.hover-button {
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 20px 0;
+    border: none;
+    opacity: 0.5;
+    border-radius: 50%; /* Figma에선 다르게 되어있던데 모르겠다 */
+    background-image: url('../resources/hover-button-arrow-up.png');
+
+}
+
+.hover-button:hover {
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 20px 0;
+    border: none;
+    border-radius: 50%; /* Figma에선 다르게 되어있던데 모르겠다 */
+    opacity: 1;
+    background-image: url('../resources/hover-button-arrow-up.png');
+
+}
+
+
+/* 브라우저 크기가 767px 이하일 때 수직 정렬 */
+@media (max-width: 767px) {
+
+    .main-container .main-section-cat {
+        display: flex;
+        flex-direction: column; /* 수직 정렬로 변경 */
+        text-align: center;
+    }
+
+    .main-container .main-section-cat .main-cat-img {
+
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .main-container .main-section-text {
+
+        text-align: center;
+
+    }
+
+    .main-container .image-item,
+    .main-container .add-image-item
+    {
+        width: 100%; /* 3열로 나누기, 간격은 여기서 20px로 설정 */
+        float: left; /* 가로로 정렬 */
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    /* 여긴 좀 있다가 바꾸자 */
+    .main-container .image-item img,
+    .main-container .add-image-item img {
+        width: 100%; /* 이미지를 부모 요소에 꽉 채우기 */
+        height: 100%; /* 비율을 유지한 채 이미지의 높이 조절 */
+    }
+
+    .main-container .subscribe {
+
+        width: 100%;
+        position: relative; /* 위치 조정을 위한 position */
+        top: 80px;
+
+    }
+
+    .main-container .subscribe-inner-container {
+
+        /*min-width: 540px;*/
+        top: -50px;
+        display: flex;
+        flex-direction: column; /* 수직 정렬로 변경 */
+    }
+
+    /* 상속하는 구조로 해야 적용이 되네? */
+    .main-container .subscribe-inner-container .subscribe-input-container {
+
+        margin: 0 50px 50px 50px;
+
+    }
+
+
+
+}

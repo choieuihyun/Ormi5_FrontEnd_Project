@@ -1,0 +1,77 @@
+.modal_popup h2{
+    text-align: center;
+}
+
+.modal_btn:hover {
+    box-shadow: 3px 4px 11px 0 #00000040;
+}
+
+
+.modal_container {
+    /*팝업 배경*/
+    position: absolute;
+    width: 100%; /* 화면에 꽉차게 */
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10; /* 지도에 가려짐 방지 */
+}
+
+.modal_popup {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../resources/modal-background-img.png");
+    border-radius: 20px;
+
+}
+
+.modal_popup_image {
+
+    margin-top: 60px;
+
+}
+
+.modal_popup_title {
+
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #D97652;
+
+}
+
+.modal_popup_text {
+
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.modal_close_button {
+
+    width: 180px;
+    height: 50px;
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    background-color: #D97652;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
