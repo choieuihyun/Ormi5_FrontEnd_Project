@@ -3,10 +3,16 @@
     동일한 속성을 갖는 요소를 제외하고는 .class .class로 선택자를 생성함.
  */
 
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: Pretendard, serif;
 }
 
 /* 헤더 전체 범위 설정 */

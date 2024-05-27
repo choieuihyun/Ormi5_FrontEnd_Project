@@ -1,6 +1,4 @@
 /* 반응형 레이아웃 구현 : https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Responsive_Design */
-/* flex 사용 이유에 대해 명확히 정의할 줄 알아야함 */
-
 
 .main-container {
     padding-left: 15%;
@@ -24,7 +22,6 @@
 
 }
 
-/* 이거 맞나? 상속이*/
 .main-container .main-section-cat .loremIpsum-bold {
 
     font-size: 36px;
@@ -94,7 +91,7 @@
 .main-container .add-image-item
 {
     width: calc(33% - 20px); /* 3열로 나누기, 간격은 여기서 20px로 설정 */
-    height: 300px; /* 높이가 변해서 고정값 사용 */
+    height: 300px;
     margin: 10px;
 }
 
@@ -103,7 +100,7 @@
 .main-container .add-image-item img {
     width: 100%; /* 이미지를 부모 요소에 꽉 채우기 */
     height: 100%; /* 비율을 유지한 채 이미지의 높이 조절 */
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 
@@ -139,17 +136,12 @@
 
 /* 중간 회색 가로선 */
 .main-container .horizontal-gray-line {
-    height: 1px; /* 수평선의 높이를 1px로 설정 */
-    background-color: #C4C4C4; /* 회색으로 선을 설정 */
+    height: 1px;
+    background-color: #C4C4C4;
     margin-top: 80px;
     margin-bottom: 68px;
 }
 
-.main-container .map {
-
-    /*width: 896px;*/
-
-}
 
 /* map container */
 .main-container .map-section h2 {
@@ -268,18 +260,9 @@
 }
 
 /* 아래에 큰 고양이 */
-
-.bottom-cat-container {
-
-    /* hover 버튼 배치를 위한 flex 속성 */
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: 180px;
-}
-
 .bottom-cat {
 
+    margin-top: 180px;
     width: 100%; /* 화면에 딱 맞추기 위한 속성 */
     height: 200px;
 
@@ -287,22 +270,27 @@
 
 .hover-button {
 
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
-    margin: 0 20px 20px 0;
+    bottom: 40px;
+    right: 40px;
     border: none;
+    cursor: pointer;
     opacity: 0.5;
     border-radius: 50%; /* Figma에선 다르게 되어있던데 모르겠다 */
     background-image: url('../resources/hover-button-arrow-up.png');
 
 }
 
+
 .hover-button:hover {
 
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 50px;
+    bottom: 20px;
+    right: 20px;
     margin: 0 20px 20px 0;
     border: none;
     border-radius: 50%; /* Figma에선 다르게 되어있던데 모르겠다 */
