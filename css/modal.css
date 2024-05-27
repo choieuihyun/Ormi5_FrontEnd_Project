@@ -9,6 +9,7 @@
 
 .modal_container {
     /*팝업 배경*/
+    display: none;
     position: absolute;
     width: 100%; /* 화면에 꽉차게 */
     height: 100%;
