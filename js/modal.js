@@ -20,7 +20,7 @@ function setupModalElements() {
     modalContainer.append(modalPopup);
     modalPopup.append(modalPopupImage, modalPopupTitle, modalPopupText, modalCloseButton);
 
-    modalPopupImage.src = "../resources/modal-cat.png";
+    modalPopupImage.src = "resources/modal-cat.png";
     modalPopupTitle.textContent = 'Thank you!';
     modalPopupText.textContent = 'Lorem Ipsum is simply dummy text of the printing industry.';
     modalCloseButton.textContent = 'OK! I Love HODU';
