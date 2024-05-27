@@ -95,7 +95,6 @@
     margin: 10px;
 }
 
-/* 여긴 좀 있다가 바꾸자 */
 .main-container .image-item img,
 .main-container .add-image-item img {
     width: 100%; /* 이미지를 부모 요소에 꽉 채우기 */
@@ -226,7 +225,7 @@
 .main-container .subscribe-input-container img {
 
     position: absolute;
-    left: 28px; /* 맞는 건지 모르겠다 */
+    left: 28px
 
 }
 
@@ -235,7 +234,7 @@
     width: 100%;
     height: 60px;
     border-radius: 60px;
-    padding-left: 68px; /* 맞는 건지 모르겠다 */
+    padding-left: 68px;
     margin: 5px;
     font-size: 16px;
     line-height: 20px;
@@ -245,7 +244,6 @@
 
 .main-container .subscribe-input-container button {
 
-    /* 고정값 사용이 있어도 되는지 모르겠다 */
     position: absolute;
     width: 140px;
     height: 50px;
@@ -278,7 +276,7 @@
     border: none;
     cursor: pointer;
     opacity: 0.5;
-    border-radius: 50%; /* Figma에선 다르게 되어있던데 모르겠다 */
+    border-radius: 50%;
     background-image: url('../resources/hover-button-arrow-up.png');
 
 }
@@ -293,7 +291,7 @@
     right: 20px;
     margin: 0 20px 20px 0;
     border: none;
-    border-radius: 50%; /* Figma에선 다르게 되어있던데 모르겠다 */
+    border-radius: 50%;
     opacity: 1;
     background-image: url('../resources/hover-button-arrow-up.png');
 
@@ -348,7 +346,6 @@
 
     .main-container .subscribe-inner-container {
 
-        /*min-width: 540px;*/
         top: -50px;
         display: flex;
         flex-direction: column; /* 수직 정렬로 변경 */
