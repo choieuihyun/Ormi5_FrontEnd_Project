@@ -186,17 +186,16 @@
     margin: 50px;
 }
 
-.main-container .subscribe-text-container .loremIpsum-bold {
+.main-container .subscribe-text-container h2 {
 
     margin-bottom: 18px;
-    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     color: white;
 
 }
 
-.main-container .subscribe-text-container .loremIpsum-normal {
+.main-container .subscribe-text-container p {
 
     font-weight: 400;
     font-size: 14px;
