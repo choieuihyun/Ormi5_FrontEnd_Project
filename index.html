@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ProjectPage</title>
+    <title>HODU</title>
 
     <!-- 네이밍의 조합은 (위치)(형태)(의미) 순으로 작성한다. -->
     <link rel="stylesheet" href="css/header.css">
@@ -18,7 +18,8 @@
         실행 코드보다 먼저 선언되어야 한다.
      -->
     <!--    kakao map api guide : https://apis.map.kakao.com/web/guide/#loadlibrary-->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=06c6a053fbdb62465e09e7fa0d618cd0&libraries=services"></script>
+    <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=06c6a053fbdb62465e09e7fa0d618cd0&libraries=services"></script>
 
 </head>
 <body>
@@ -36,11 +37,11 @@
             <button>Download</button>
         </div>
     </nav>
-    <section class="header-section-content">
-        <div class="loremIpsum-div-container">
-            <h2 class="loremIpsum-bold">Lorem Ipsum is simply
+    <section class="header-section">
+        <div>
+            <h2>Lorem Ipsum is simply
                 dummy text of the printing and</h2>
-            <p class="loremIpsum-normal">Lorem Ipsum is simply dummy text of the printing and
+            <p>Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text
                 ever since the 1500s, when an unknown</p>
@@ -71,18 +72,18 @@
             </p>
         </section>
 
-        <section class="imageList-section">
+        <section class="main-section-imageList">
             <ul class="imageList-ul"></ul>
         </section>
 
-        <section class="showMore-section">
+        <section class="main-showMore-section">
             <h2>Continue exploring HODU</h2>
             <button class="showMore-button">Show more</button>
         </section>
 
         <div class="horizontal-gray-line"></div>
 
-        <section class="map-section">
+        <section class="main-section-map">
             <h2>Where you'll be</h2>
             <p class="map-road-address-text">도로 주소명</p>
             <p class="map-address-text">주소명</p>
@@ -101,7 +102,7 @@
 
                 <div class="subscribe-input-container">
                     <img src="resources/icon-mail.svg" alt="메일 아이콘"/>
-                    <input type="text" id="address" name="address" placeholder="Enter your e-mail address">
+                    <input type="text" id="email" name="email" placeholder="Enter your e-mail address">
                     <button class="modal_open_button">Subscribe</button>
                 </div>
             </div>
@@ -113,9 +114,6 @@
 
     <button class="hover-button"></button>
 
-    <script src="js/kakao.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/main.js"></script>
 
 </main>
 
@@ -133,8 +131,9 @@
 
 </footer>
 
-
-
+<script src="js/kakao.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
