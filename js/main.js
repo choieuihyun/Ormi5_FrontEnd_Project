@@ -1,4 +1,4 @@
-const showMoreButton = document.querySelector('.main-showMore-button');
+const showMoreButton = document.querySelector('.showMore-button');
 const imageList = document.querySelector('.imageList-ul');
 const addressText = document.querySelector('.map-address-text');
 const roadAddressText = document.querySelector('.map-road-address-text');
@@ -48,6 +48,8 @@ fetchImages(pageNumber, limitNumber);
 
 showMoreButton.addEventListener('click', () => {
 
+
+    // showMoreButton.focus();
     if (showMoreButton.textContent === "Show more") {
 
         if (pageNumber < 3)
