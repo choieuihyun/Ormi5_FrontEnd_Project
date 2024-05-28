@@ -1,5 +1,6 @@
 const modalOpenButton = document.querySelector('.modal_open_button');
 
+const main = document.querySelector('main');
 const modalContainer = document.createElement('div');
 const modalPopup = document.createElement('div');
 const modalPopupImage = document.createElement('img');
@@ -16,7 +17,7 @@ function setupModalElements() {
     modalPopupText.classList.add('modal_popup_text');
     modalCloseButton.classList.add('modal_close_button');
 
-    document.body.append(modalContainer);
+    main.append(modalContainer);
     modalContainer.append(modalPopup);
     modalPopup.append(modalPopupImage, modalPopupTitle, modalPopupText, modalCloseButton);
 
