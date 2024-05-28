@@ -19,8 +19,8 @@
 header {
 
     background-color: #F2E9D8;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 16%;
+    padding-right: 16%;
 
 }
 
@@ -69,7 +69,7 @@ header button {
 }
 
 /* 헤더 content */
-.header-section-content {
+.header-section {
 
     display: flex;
     align-items: center;
@@ -77,23 +77,22 @@ header button {
 }
 
 
-.header-section-content .header-cat-img {
+.header-section .header-cat-img {
 
     width: 40%;
 
 }
 
 /* 폰트 종류는 통합으로 써도 되겠는데? */
-.header-section-content .loremIpsum-bold {
+.header-section h2 {
 
     font-size: 48px;
-    font-weight: 700;
     line-height: 60px;
     margin-bottom: 40px;
 
 }
 
-.header-section-content .loremIpsum-normal {
+.header-section p {
 
     font-size: 16px;
     font-weight: 400;
@@ -106,7 +105,7 @@ header button {
 @media (max-width: 767px) {
 
     /* 헤더 content */
-    .header-section-content {
+    .header-section {
 
         display: flex;
         flex-direction: column;
@@ -115,24 +114,23 @@ header button {
     }
 
 
-    .header-section-content .header-cat-img {
+    .header-section .header-cat-img {
 
         width: 40%;
 
     }
 
     /* 폰트 종류는 통합으로 써도 되겠는데? */
-    .header-section-content .loremIpsum-bold {
+    .header-section h2 {
 
         text-align: center;
         font-size: 48px;
-        font-weight: 700;
         line-height: 60px;
         margin-bottom: 40px;
 
     }
 
-    .header-section-content .loremIpsum-normal {
+    .header-section p {
 
         text-align: center;
         font-size: 16px;
