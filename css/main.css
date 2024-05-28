@@ -37,7 +37,6 @@
 
 }
 
-/* main text section */
 
 .main-container .main-section-text {
 
@@ -45,7 +44,6 @@
 
 }
 
-/* 이거 이렇게 하는게 아니라 h2 같은데? */
 .main-container .main-section-text h2 {
 
     font-size: 48px;
@@ -93,8 +91,8 @@
 
 .main-container .image-item img,
 .main-container .add-image-item img {
-    width: 100%; /* 이미지를 부모 요소에 꽉 채우기 */
-    height: 100%; /* 비율을 유지한 채 이미지의 높이 조절 */
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
@@ -166,9 +164,9 @@
 
 .main-container .subscribe {
 
-    position: relative; /* 위치 조정을 위한 position */
+    position: relative;
     width: 100%;
-    top: 80px; /* 이거 값 기준을 뭘로 해야하지? */
+    top: 80px;
 
 }
 
@@ -183,7 +181,7 @@
 
 
 .main-container .subscribe-text-container {
-    flex: 1; /* 각 자식 요소에 동일한 flex 값 적용 */
+    flex: 1;
     padding: 50px;
 }
 
@@ -258,8 +256,8 @@
 .bottom-cat {
 
     margin-top: 180px;
-    width: 100%; /* 화면에 딱 맞추기 위한 속성 */
-    height: 200px;
+    width: 100%;
+    height: 300px;
 
 }
 
