@@ -65,7 +65,7 @@ function displayCenterInfo(result, status) {
         for(var i = 0; i < result.length; i++) {
             // 행정동의 region_type 값은 'H' 이므로
             if (result[i].region_type === 'H') {
-                infoDiv.innerHTML = result[i].address_name;
+                // infoDiv.innerHTML = result[i].address_name;
                 break;
             }
         }
