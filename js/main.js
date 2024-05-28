@@ -1,4 +1,4 @@
-const showMoreButton = document.querySelector('.show-more-button');
+const showMoreButton = document.querySelector('.showMore-button');
 const imageList = document.querySelector('.imageList-ul');
 const addressText = document.querySelector('.map-address-text');
 const roadAddressText = document.querySelector('.map-road-address-text');
