@@ -48,8 +48,6 @@ fetchImages(pageNumber, limitNumber);
 
 showMoreButton.addEventListener('click', () => {
 
-
-    // showMoreButton.focus();
     if (showMoreButton.textContent === "Show more") {
 
         if (pageNumber < 3)
